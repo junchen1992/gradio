@@ -52,13 +52,17 @@ artifacts = [
   "/gradio/templates",
 ]
 
-
 [tool.hatch.build.targets.sdist]
 include = [
   "/gradio",
   "/test",
   "/README_OFFLINE.md",
   "/requirements.txt",
+]
+
+[tool.hatch.build.targets.wheel]
+include = [
+  "/gradio",
 ]
 
 [tool.ruff]
