@@ -23,7 +23,7 @@ def analytics_enabled() -> bool:
     """
     Returns: True if analytics are enabled, False otherwise.
     """
-    return os.getenv("GRADIO_ANALYTICS_ENABLED", "True") == "True"
+    return os.getenv("GRADIO_ANALYTICS_ENABLED", "False") == "True"
 
 
 def _do_analytics_request(url: str, data: dict[str, Any]) -> None:
