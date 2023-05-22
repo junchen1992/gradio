@@ -19,7 +19,7 @@ class Default(Base):
         font: fonts.Font
         | str
         | Iterable[fonts.Font | str] = (
-            fonts.GoogleFont("Source Sans Pro"),
+            # fonts.GoogleFont("Source Sans Pro"),
             "ui-sans-serif",
             "system-ui",
             "sans-serif",
@@ -27,7 +27,7 @@ class Default(Base):
         font_mono: fonts.Font
         | str
         | Iterable[fonts.Font | str] = (
-            fonts.GoogleFont("IBM Plex Mono"),
+            # fonts.GoogleFont("IBM Plex Mono"),
             "ui-monospace",
             "Consolas",
             "monospace",

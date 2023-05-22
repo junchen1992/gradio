@@ -6,5 +6,5 @@ source scripts/helpers.sh
 pnpm_required
 
 echo "Building the frontend..."
-pnpm i --frozen-lockfile
+pnpm i --no-frozen-lockfile
 pnpm build

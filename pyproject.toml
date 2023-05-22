@@ -3,7 +3,7 @@ requires = ["hatchling", "hatch-requirements-txt", "hatch-fancy-pypi-readme>=22.
 build-backend = "hatchling.build"
 
 [project]
-name = "gradio"
+name = "gradio-offline"
 dynamic = ["version", "dependencies", "readme"]
 description = "Python library for easily interacting with trained machine learning models"
 license = "Apache-2.0"
@@ -24,7 +24,7 @@ gradio = "gradio.reload:run_in_reload_mode"
 upload_theme = "gradio.themes.upload_theme:main"
 
 [project.urls]
-Homepage = "https://github.com/gradio-app/gradio"
+Homepage = "https://github.com/junchen1992/gradio-offline"
 
 [tool.hatch.version]
 path = "gradio/version.txt"
@@ -59,6 +59,11 @@ include = [
   "/test",
   "/README.md",
   "/requirements.txt",
+]
+
+[tool.hatch.build.targets.wheel]
+include = [
+  "/gradio",
 ]
 
 [tool.ruff]
