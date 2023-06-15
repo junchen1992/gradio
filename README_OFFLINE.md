@@ -10,4 +10,4 @@ pip install gradio-offline
 
 Usage is the same as using `gradio`.
 
-:warning: This repo is designed to make minimal changes to enable the offline usage of gradio. **It is still under development.**
+:warning: This repo is designed to make minimal changes to enable the offline usage of gradio.
